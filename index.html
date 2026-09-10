@@ -3,10 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Soloboy Gt - Official Website</title>
-<!-- Google Site Verification -->
-  <meta name="google-site-verification" content="CrK4JqehGGszxnd0elvbsoofuo75IcMUK0fAfFHtjOA" />
-  <!-- Schema Markup for Google -->
+
+  <title>Soloboy Gt | Web Developer, Programmer & Creative</title>
+
+  <meta name="description"
+        content="Chibuike Somtoo Ezeh, popularly known as Soloboy Gt, is a Web Developer, Programmer, UI Designer, Content Creator, Video Editor, Script Writer, Photographer and Artist.">
+
+  <meta name="keywords"
+        content="Soloboy Gt, Chibuike Somtoo Ezeh, Web Developer, Programmer, Front-end Developer, Back-end Developer, PHP Developer, UI Designer, Graphics Designer, Video Editor, Script Writer, Content Creator, Photographer">
+
+  <!-- Google Site Verification -->
+  <meta name="google-site-verification"
+        content="CrK4JqehGGszxnd0elvbsoofuo75IcMUK0fAfFHtjOA">
+
+  <!-- Schema Markup -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -15,6 +25,7 @@
     "alternateName": "Soloboy Gt",
     "url": "https://soloboygt.github.io",
     "image": "https://soloboygt.github.io/profile.jpg",
+
     "sameAs": [
       "https://www.facebook.com/soloboygt",
       "https://www.instagram.com/soloboygt",
@@ -23,741 +34,2271 @@
       "https://www.tiktok.com/@soloboygt01",
       "https://twitter.com/Soloboygt"
     ],
-    "jobTitle": "Artist & Programmer",
-    "birthDate": "2006",
+
+    "jobTitle": "Web Developer & Programmer",
     "nationality": "Nigerian"
   }
   </script>
 
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
   <style>
-    
-   /* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
-:root{
-  --bg:#080808;
-  --card:#111111;
-  --text:#ffffff;
-  --muted:#a0a0a0;
+    :root{
+      --bg:#080808;
+      --card:#111111;
+      --card-light:#151515;
 
-  --purple:#8b5cf6;
-  --orange:#ff7a18;
+      --text:#ffffff;
+      --muted:#a0a0a0;
 
-  --gradient:linear-gradient(
-    135deg,
-    #8b5cf6,
-    #ff7a18
-  );
-}
+      --purple:#8b5cf6;
+      --orange:#ff7a18;
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
+      --border:rgba(255,255,255,.09);
 
-html{
-  scroll-behavior:smooth;
-}
+      --gradient:linear-gradient(
+        135deg,
+        #8b5cf6,
+        #ff7a18
+      );
+    }
 
-body{
-  font-family:'Inter',sans-serif;
-  background:var(--bg);
-  color:var(--text);
-  overflow-x:hidden;
-}
 
-section{
-  padding:100px 8%;
-}
+    /* =========================
+       RESET
+    ========================= */
 
-img{
-  max-width:100%;
-  display:block;
-}
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
 
-a{
-  text-decoration:none;
-}
-    
-.navbar{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
+    html{
+      scroll-behavior:smooth;
+      scroll-padding-top:90px;
+    }
 
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+    body{
+      font-family:'Inter',sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      overflow-x:hidden;
+      line-height:1.6;
+    }
 
-  padding:18px 8%;
+    img{
+      max-width:100%;
+      display:block;
+    }
 
-  backdrop-filter:blur(15px);
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
 
-  background:rgba(8,8,8,.6);
+    ul{
+      list-style:none;
+    }
 
-  z-index:1000;
-}
 
-.logo{
-  font-size:1.3rem;
-  font-weight:800;
-  letter-spacing:2px;
-}
+    /* =========================
+       NAVBAR
+    ========================= */
 
-.nav-links{
-  display:flex;
-  list-style:none;
-  gap:30px;
-}
+    .navbar{
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
 
-.nav-links a{
-  color:white;
-  transition:.3s;
-}
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
 
-.nav-links a:hover{
-  color:#8b5cf6;
-}
+      padding:18px 8%;
 
-.contact-btn{
-  background:var(--gradient);
-  color:white;
-  padding:12px 25px;
-  border-radius:50px;
-  font-weight:600;
-}
+      background:rgba(8,8,8,.72);
+      backdrop-filter:blur(18px);
+      -webkit-backdrop-filter:blur(18px);
+
+      border-bottom:1px solid rgba(255,255,255,.04);
+
+      z-index:1000;
+    }
+
+    .logo{
+      font-size:1.3rem;
+      font-weight:800;
+      letter-spacing:2px;
+      white-space:nowrap;
+    }
+
+    .nav-links{
+      display:flex;
+      align-items:center;
+      gap:28px;
+    }
+
+    .nav-links a{
+      color:#eeeeee;
+      font-size:.92rem;
+      font-weight:500;
+      transition:.3s ease;
+    }
+
+    .nav-links a:hover{
+      color:var(--purple);
+    }
+
+    .contact-btn{
+      background:var(--gradient);
+      color:white;
+
+      padding:11px 23px;
+
+      border-radius:50px;
+
+      font-weight:600;
+      font-size:.9rem;
+
+      transition:.3s ease;
+    }
+
+    .contact-btn:hover{
+      transform:translateY(-2px);
+      box-shadow:0 10px 30px rgba(139,92,246,.2);
+    }
+
+
+    /* MOBILE MENU BUTTON */
+
+    .menu-btn{
+      display:none;
+
+      width:42px;
+      height:42px;
+
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:10px;
+
+      background:rgba(255,255,255,.05);
+
+      color:white;
+      font-size:1.3rem;
+
+      cursor:pointer;
+    }
+
+
+    /* =========================
+       GENERAL SECTIONS
+    ========================= */
+
+    section{
+      padding:110px 8%;
+      position:relative;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:55px;
+    }
+
+    .section-title h2{
+      font-size:2.5rem;
+      font-weight:800;
+    }
+
+    .section-title p{
+      color:var(--muted);
+      margin-top:12px;
+      max-width:650px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
 
     .hero{
-  min-height:100vh;
+      min-height:100vh;
 
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:60px;
-}
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
 
-.hero-left{
-  flex:1;
-}
+      gap:70px;
 
-.tag{
-  color:#ff7a18;
-  letter-spacing:2px;
-  font-size:.9rem;
-}
+      padding-top:140px;
+    }
 
-.hero h1{
-  font-size:5rem;
-  margin-top:15px;
-  font-weight:900;
-  line-height:1;
-}
+    .hero-left{
+      flex:1;
+    }
 
-.hero h2{
-  margin-top:20px;
-  font-size:1.5rem;
-  color:#d5d5d5;
-  max-width:600px;
-}
+    .tag{
+      color:var(--orange);
 
-.hero p{
-  margin-top:20px;
-  color:var(--muted);
-  max-width:600px;
-}
+      letter-spacing:2px;
 
-.hero-buttons{
-  margin-top:35px;
-  display:flex;
-  gap:20px;
-}
+      font-size:.88rem;
+      font-weight:600;
+
+      text-transform:uppercase;
+    }
+
+    .hero h1{
+      font-size:clamp(3.5rem,7vw,6rem);
+
+      margin-top:15px;
+
+      font-weight:900;
+
+      line-height:.95;
+
+      letter-spacing:-3px;
+    }
+
+    .hero h2{
+      margin-top:25px;
+
+      font-size:clamp(1.35rem,2.5vw,2rem);
+
+      color:#dddddd;
+
+      max-width:650px;
+
+      line-height:1.35;
+    }
+
+    .hero p{
+      margin-top:20px;
+
+      color:var(--muted);
+
+      max-width:650px;
+
+      font-size:1rem;
+    }
+
+    .hero-buttons{
+      margin-top:35px;
+
+      display:flex;
+
+      gap:15px;
+
+      flex-wrap:wrap;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+
+      padding:14px 27px;
+
+      border-radius:50px;
+
+      font-weight:600;
+
+      transition:.3s ease;
+    }
 
     .btn-primary{
-  background:var(--gradient);
-  color:white;
-  padding:15px 30px;
-  border-radius:50px;
-  font-weight:600;
-}
+      background:var(--gradient);
+      color:white;
+    }
 
-.btn-secondary{
-  border:1px solid #333;
-  color:white;
-  padding:15px 30px;
-  border-radius:50px;
-}
+    .btn-primary:hover{
+      transform:translateY(-3px);
+      box-shadow:0 15px 35px rgba(139,92,246,.22);
+    }
+
+    .btn-secondary{
+      border:1px solid #333;
+      color:white;
+    }
+
+    .btn-secondary:hover{
+      background:#151515;
+      border-color:#555;
+    }
+
+
+    /* HERO IMAGE */
+
     .hero-right{
-  flex:1;
-  display:flex;
-  justify-content:center;
-}
+      flex:1;
 
-.hero-right img{
-  width:420px;
-  height:420px;
+      display:flex;
 
-  object-fit:cover;
+      justify-content:center;
+    }
 
-  border-radius:30px;
+    .hero-image-wrapper{
+      position:relative;
+    }
 
-  border:3px solid rgba(255,255,255,.1);
+    .hero-image-wrapper::before{
+      content:"";
 
-  box-shadow:
-  0 0 60px rgba(139,92,246,.3);
-}
+      position:absolute;
+
+      width:100%;
+      height:100%;
+
+      background:var(--gradient);
+
+      opacity:.12;
+
+      filter:blur(50px);
+
+      z-index:-1;
+    }
+
+    .hero-right img{
+      width:420px;
+      height:420px;
+
+      object-fit:cover;
+
+      border-radius:30px;
+
+      border:3px solid rgba(255,255,255,.1);
+
+      box-shadow:
+      0 0 60px rgba(139,92,246,.25);
+    }
+
+
+    /* =========================
+       ABOUT
+    ========================= */
+
     .about-content{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:60px;
-  align-items:center;
-}
+      display:grid;
 
-.section-title{
-  text-align:center;
-  margin-bottom:60px;
-  font-size:2.5rem;
-  font-weight:800;
-}
+      grid-template-columns:1fr 1fr;
 
-.about-image img{
-  border-radius:25px;
-}
+      gap:70px;
 
-.about-text h2{
-  font-size:2.2rem;
-}
+      align-items:center;
+    }
 
-.about-text h3{
-  color:#8b5cf6;
-  margin:15px 0;
-}
+    .about-image img{
+      width:100%;
+      max-width:520px;
 
-.about-text p{
-  color:#bdbdbd;
-  line-height:1.8;
-}
+      margin:auto;
+
+      border-radius:25px;
+
+      border:1px solid var(--border);
+    }
+
+    .about-text h2{
+      font-size:2.3rem;
+      line-height:1.2;
+    }
+
+    .about-text h3{
+      color:var(--purple);
+
+      margin:12px 0 20px;
+
+      font-size:1.05rem;
+    }
+
+    .about-text p{
+      color:#bdbdbd;
+
+      line-height:1.9;
+
+      margin-bottom:15px;
+    }
+
+    .about-highlights{
+      display:grid;
+
+      grid-template-columns:repeat(2,1fr);
+
+      gap:12px;
+
+      margin-top:25px;
+    }
+
+    .highlight{
+      background:rgba(255,255,255,.04);
+
+      border:1px solid var(--border);
+
+      border-radius:12px;
+
+      padding:14px 16px;
+
+      color:#ddd;
+
+      font-size:.9rem;
+    }
+
+
+    /* =========================
+       SKILLS
+    ========================= */
+
+    .skills-grid{
+      display:grid;
+
+      grid-template-columns:
+      repeat(auto-fit,minmax(250px,1fr));
+
+      gap:22px;
+    }
+
+    .skill-card{
+      background:rgba(255,255,255,.04);
+
+      border:1px solid var(--border);
+
+      border-radius:20px;
+
+      padding:30px;
+
+      transition:.35s ease;
+    }
+
+    .skill-card:hover{
+      transform:translateY(-7px);
+
+      border-color:rgba(139,92,246,.35);
+    }
+
+    .skill-icon{
+      font-size:2rem;
+      margin-bottom:15px;
+    }
+
+    .skill-card h3{
+      margin-bottom:10px;
+    }
+
+    .skill-card p{
+      color:#aaa;
+      font-size:.92rem;
+      line-height:1.7;
+    }
+
+    .skill-tags{
+      display:flex;
+      flex-wrap:wrap;
+
+      gap:8px;
+
+      margin-top:18px;
+    }
+
+    .skill-tags span{
+      padding:7px 11px;
+
+      border-radius:20px;
+
+      background:rgba(139,92,246,.1);
+
+      border:1px solid rgba(139,92,246,.15);
+
+      color:#ddd;
+
+      font-size:.78rem;
+    }
+
+
+    /* =========================
+       WHAT I DO
+    ========================= */
+
     .services-grid{
-  display:grid;
-  grid-template-columns:
-  repeat(auto-fit,minmax(250px,1fr));
+      display:grid;
 
-  gap:25px;
-}
+      grid-template-columns:
+      repeat(auto-fit,minmax(240px,1fr));
 
-.service-card{
-  background:rgba(255,255,255,.05);
+      gap:22px;
+    }
 
-  border:1px solid rgba(255,255,255,.08);
+    .service-card{
+      background:rgba(255,255,255,.04);
 
-  backdrop-filter:blur(20px);
+      border:1px solid var(--border);
 
-  border-radius:20px;
+      backdrop-filter:blur(20px);
 
-  padding:40px 30px;
+      border-radius:20px;
 
-  transition:.4s;
-}
+      padding:35px 28px;
 
-.service-card:hover{
-  transform:translateY(-10px);
-}
+      transition:.4s ease;
+    }
 
-.service-card h3{
-  margin-top:15px;
-}
+    .service-card:hover{
+      transform:translateY(-8px);
+
+      background:rgba(255,255,255,.06);
+    }
+
+    .service-icon{
+      font-size:2rem;
+    }
+
+    .service-card h3{
+      margin-top:15px;
+      margin-bottom:10px;
+    }
+
+    .service-card p{
+      color:#aaa;
+
+      font-size:.9rem;
+
+      line-height:1.7;
+    }
+
+
+    /* =========================
+       PROJECTS
+    ========================= */
+
+    .work-grid{
+      display:grid;
+
+      grid-template-columns:
+      repeat(auto-fit,minmax(280px,1fr));
+
+      gap:25px;
+    }
+
+    .work-card{
+      background:rgba(255,255,255,.04);
+
+      border:1px solid var(--border);
+
+      padding:32px;
+
+      border-radius:20px;
+
+      transition:.4s ease;
+
+      display:flex;
+      flex-direction:column;
+    }
+
+    .work-card:hover{
+      transform:translateY(-8px);
+
+      border-color:rgba(139,92,246,.35);
+    }
+
+    .project-number{
+      color:var(--orange);
+
+      font-size:.8rem;
+
+      font-weight:700;
+
+      letter-spacing:2px;
+
+      margin-bottom:12px;
+    }
+
+    .work-card h3{
+      margin-bottom:12px;
+
+      color:white;
+
+      font-size:1.35rem;
+    }
+
+    .work-card p{
+      color:#aaa;
+
+      line-height:1.7;
+
+      font-size:.92rem;
+    }
+
+    .project-tech{
+      display:flex;
+
+      flex-wrap:wrap;
+
+      gap:8px;
+
+      margin-top:20px;
+    }
+
+    .project-tech span{
+      background:#181818;
+
+      border:1px solid rgba(255,255,255,.08);
+
+      color:#ccc;
+
+      padding:6px 10px;
+
+      border-radius:15px;
+
+      font-size:.75rem;
+    }
+
+
+    /* =========================
+       CREATIVE WORK
+    ========================= */
+
+    .creative-grid{
+      display:grid;
+
+      grid-template-columns:
+      repeat(auto-fit,minmax(240px,1fr));
+
+      gap:22px;
+    }
+
+    .creative-card{
+      min-height:210px;
+
+      background:linear-gradient(
+        145deg,
+        rgba(139,92,246,.08),
+        rgba(255,122,24,.06)
+      );
+
+      border:1px solid var(--border);
+
+      border-radius:20px;
+
+      padding:30px;
+
+      display:flex;
+
+      flex-direction:column;
+
+      justify-content:flex-end;
+
+      transition:.4s ease;
+    }
+
+    .creative-card:hover{
+      transform:translateY(-7px);
+    }
+
+    .creative-card .icon{
+      font-size:2.5rem;
+      margin-bottom:auto;
+    }
+
+    .creative-card h3{
+      margin-bottom:8px;
+    }
+
+    .creative-card p{
+      color:#aaa;
+      font-size:.9rem;
+    }
+
+
+    /* =========================
+       VIDEOS
+    ========================= */
+
+    .video-grid{
+      display:grid;
+
+      grid-template-columns:
+      repeat(auto-fit,minmax(300px,1fr));
+
+      gap:25px;
+    }
+
+    .video-card{
+      background:rgba(255,255,255,.04);
+
+      border:1px solid var(--border);
+
+      border-radius:20px;
+
+      overflow:hidden;
+    }
+
+    .video-card iframe{
+      width:100%;
+
+      height:260px;
+
+      border:none;
+
+      display:block;
+    }
+
+    .video-info{
+      padding:18px;
+    }
+
+    .video-info h3{
+      font-size:1rem;
+    }
+
+    .video-info p{
+      color:#999;
+
+      font-size:.82rem;
+
+      margin-top:5px;
+    }
+
+
+    /* =========================
+       PHOTOGRAPHY
+    ========================= */
+
+    .gallery{
+      display:grid;
+
+      grid-template-columns:
+      repeat(auto-fit,minmax(250px,1fr));
+
+      gap:20px;
+    }
+
+    .gallery-item{
+      overflow:hidden;
+
+      border-radius:20px;
+
+      border:1px solid var(--border);
+
+      background:#111;
+    }
+
+    .gallery img{
+      width:100%;
+
+      height:300px;
+
+      object-fit:cover;
+
+      transition:.4s ease;
+    }
+
+    .gallery img:hover{
+      transform:scale(1.04);
+    }
+
+
+    /* =========================
+       JOURNEY
+    ========================= */
+
+    .timeline{
+      display:grid;
+
+      grid-template-columns:
+      repeat(auto-fit,minmax(220px,1fr));
+
+      gap:20px;
+    }
+
+    .timeline-item{
+      background:rgba(255,255,255,.04);
+
+      border:1px solid var(--border);
+
+      padding:30px;
+
+      border-radius:20px;
+
+      text-align:center;
+    }
+
+    .timeline-item span{
+      color:var(--orange);
+
+      font-size:1.5rem;
+
+      font-weight:700;
+    }
+
+    .timeline-item h3{
+      margin-top:10px;
+
+      font-size:1rem;
+    }
+
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact-box{
+      background:rgba(255,255,255,.04);
+
+      border:1px solid var(--border);
+
+      border-radius:30px;
+
+      padding:70px 30px;
+
+      text-align:center;
+    }
+
+    .contact-box h2{
+      font-size:2.5rem;
+    }
+
+    .contact-box > p{
+      color:#aaa;
+
+      margin-top:12px;
+
+      max-width:600px;
+
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .socials{
+      margin-top:30px;
+
+      display:flex;
+
+      flex-wrap:wrap;
+
+      justify-content:center;
+
+      gap:12px;
+    }
+
+    .socials a{
+      background:rgba(255,255,255,.07);
+
+      border:1px solid rgba(255,255,255,.06);
+
+      padding:11px 18px;
+
+      border-radius:50px;
+
+      color:white;
+
+      font-size:.88rem;
+
+      transition:.3s ease;
+    }
+
+    .socials a:hover{
+      background:var(--gradient);
+
+      border-color:transparent;
+
+      transform:translateY(-2px);
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer{
+      text-align:center;
+
+      padding:50px 20px;
+
+      border-top:1px solid rgba(255,255,255,.08);
+    }
+
+    footer h3{
+      font-size:1.2rem;
+    }
+
+    footer p{
+      color:#999;
+
+      margin:10px 0;
+
+      font-size:.9rem;
+    }
+
+    footer small{
+      color:#666;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
     @media(max-width:991px){
 
-.hero{
-  flex-direction:column;
-  text-align:center;
-  padding-top:150px;
-}
+      .navbar{
+        padding:16px 6%;
+      }
 
-.hero h1{
-  font-size:3rem;
-}
+      .nav-links{
+        position:absolute;
 
-.about-content{
-  grid-template-columns:1fr;
-}
+        top:75px;
+        left:6%;
+        right:6%;
 
-.nav-links{
-  display:none;
-}
+        display:none;
 
-.contact-btn{
-  display:none;
-}
+        flex-direction:column;
 
-.hero-right img{
-  width:300px;
-  height:300px;
-}
+        align-items:stretch;
 
-section{
-  padding:80px 6%;
-}
+        gap:0;
 
-}
- .work-grid{
-    display:grid;
-    grid-template-columns:
-    repeat(auto-fit,minmax(280px,1fr));
+        background:#101010;
 
-    gap:25px;
-}
+        border:1px solid var(--border);
 
-.work-card{
-    background:rgba(255,255,255,.05);
+        border-radius:18px;
 
-    border:1px solid rgba(255,255,255,.08);
+        padding:10px;
 
-    padding:30px;
+        box-shadow:0 20px 50px rgba(0,0,0,.5);
+      }
 
-    border-radius:20px;
+      .nav-links.active{
+        display:flex;
+      }
 
-    transition:.4s;
-}
+      .nav-links li a{
+        display:block;
 
-.work-card:hover{
-    transform:translateY(-10px);
-}
+        padding:13px 15px;
 
-.work-card h3{
-    margin-bottom:15px;
-    color:#8b5cf6;
-}
+        border-radius:10px;
+      }
 
-.work-card p{
-    color:#cfcfcf;
-}
-    .video-grid{
-    display:grid;
+      .nav-links li a:hover{
+        background:rgba(255,255,255,.05);
+      }
 
-    grid-template-columns:
-    repeat(auto-fit,minmax(320px,1fr));
+      .contact-btn{
+        display:none;
+      }
 
-    gap:25px;
-}
+      .menu-btn{
+        display:block;
+      }
 
-.video-grid iframe{
-    width:100%;
-    height:250px;
+      section{
+        padding:85px 6%;
+      }
 
-    border:none;
+      .hero{
+        flex-direction:column;
 
-    border-radius:20px;
-}
-    .gallery{
-    display:grid;
+        text-align:center;
 
-    grid-template-columns:
-    repeat(auto-fit,minmax(250px,1fr));
+        padding-top:130px;
 
-    gap:20px;
-}
+        gap:50px;
+      }
 
-.gallery img{
-    width:100%;
-    height:300px;
+      .hero h1{
+        font-size:3.5rem;
 
-    object-fit:cover;
+        letter-spacing:-2px;
+      }
 
-    border-radius:20px;
+      .hero h2{
+        margin-left:auto;
+        margin-right:auto;
+      }
 
-    transition:.4s;
-}
+      .hero p{
+        margin-left:auto;
+        margin-right:auto;
+      }
 
-.gallery img:hover{
-    transform:scale(1.03);
-}
-   .timeline{
-    display:grid;
+      .hero-buttons{
+        justify-content:center;
+      }
 
-    grid-template-columns:
-    repeat(auto-fit,minmax(220px,1fr));
+      .hero-right img{
+        width:320px;
+        height:320px;
+      }
 
-    gap:25px;
-}
+      .about-content{
+        grid-template-columns:1fr;
 
-.timeline-item{
-    background:rgba(255,255,255,.05);
+        gap:45px;
+      }
 
-    padding:30px;
+      .about-text{
+        text-align:center;
+      }
 
-    border-radius:20px;
+      .about-highlights{
+        text-align:left;
+      }
 
-    text-align:center;
-}
+      .section-title h2{
+        font-size:2rem;
+      }
+    }
 
-.timeline-item span{
-    color:#ff7a18;
-    font-size:1.5rem;
-    font-weight:700;
-}
-    .contact-box{
-    background:rgba(255,255,255,.05);
 
-    border-radius:30px;
+    @media(max-width:600px){
 
-    padding:60px;
+      .logo{
+        font-size:1.1rem;
+      }
 
-    text-align:center;
-}
+      .hero h1{
+        font-size:2.8rem;
+      }
 
-.contact-box p{
-    color:#bdbdbd;
-    margin-top:15px;
-}
+      .hero h2{
+        font-size:1.25rem;
+      }
 
-.socials{
-    margin-top:30px;
+      .hero-right img{
+        width:280px;
+        height:280px;
 
-    display:flex;
+        border-radius:22px;
+      }
 
-    flex-wrap:wrap;
+      .hero-buttons{
+        flex-direction:column;
 
-    justify-content:center;
+        width:100%;
+      }
 
-    gap:20px;
-}
+      .btn-primary,
+      .btn-secondary{
+        width:100%;
+      }
 
-.socials a{
-    background:rgba(255,255,255,.08);
+      .about-highlights{
+        grid-template-columns:1fr;
+      }
 
-    padding:12px 20px;
+      .contact-box{
+        padding:50px 20px;
+      }
 
-    border-radius:50px;
+      .contact-box h2{
+        font-size:2rem;
+      }
 
-    color:white;
-}
-    
-  footer{
-    text-align:center;
+      .video-card iframe{
+        height:230px;
+      }
 
-    padding:50px 20px;
+      .gallery img{
+        height:280px;
+      }
+    }
 
-    border-top:1px solid rgba(255,255,255,.08);
-}
-
-footer p{
-    color:#a0a0a0;
-    margin:10px 0;
-}
-    
   </style>
 </head>
+
 <body>
-  <nav class="navbar">
 
-    <div class="logo">
-        SOLOBOY GT
-    </div>
 
-    <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">What I Do</a></li>
-        <li><a href="#work">Projects</a></li>
-        <li><a href="#videos">Videos</a></li>
-        <li><a href="#photography">Photography</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+<!-- =========================
+     NAVIGATION
+========================= -->
 
-    <a href="#contact" class="contact-btn">
-        CONTACT ME
-    </a>
+<nav class="navbar">
+
+  <a href="#home" class="logo">
+    SOLOBOY GT
+  </a>
+
+  <ul class="nav-links" id="navLinks">
+
+    <li>
+      <a href="#home">Home</a>
+    </li>
+
+    <li>
+      <a href="#about">About</a>
+    </li>
+
+    <li>
+      <a href="#skills">Skills</a>
+    </li>
+
+    <li>
+      <a href="#services">What I Do</a>
+    </li>
+
+    <li>
+      <a href="#work">Projects</a>
+    </li>
+
+    <li>
+      <a href="#creative">Creative</a>
+    </li>
+
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+
+  </ul>
+
+  <a href="#contact" class="contact-btn">
+    CONTACT ME
+  </a>
+
+  <button class="menu-btn"
+          id="menuBtn"
+          aria-label="Open menu">
+    ☰
+  </button>
 
 </nav>
 
-  <section id="home" class="hero">
 
-    <div class="hero-left">
 
-        <span class="tag">
-            PROGRAMMER • ARTIST • CONTENT CREATOR
-        </span>
+<!-- =========================
+     HERO
+========================= -->
 
-        <h1>
-            SOLOBOY GT
-        </h1>
+<section id="home" class="hero">
 
-        <h2>
-            Building Technology,
-            Telling Stories,
-            Creating Experiences.
-        </h2>
+  <div class="hero-left">
 
-        <p>
-            Programmer, Artist, Scriptwriter,
-            Photographer and Content Creator.
-        </p>
+    <span class="tag">
+      WEB DEVELOPER • PROGRAMMER • CREATIVE
+    </span>
 
-        <div class="hero-buttons">
+    <h1>
+      SOLOBOY GT
+    </h1>
 
-            <a href="#work" class="btn-primary">
-                Explore My Work
-            </a>
-
-            <a href="#contact" class="btn-secondary">
-                Contact Me
-            </a>
-
-        </div>
-
-    </div>
-
-    <div class="hero-right">
-
-        <img src="profile.jpg"
-             alt="Soloboy GT">
-
-    </div>
-
-</section>
-  
-  <section id="about">
-
-    <div class="section-title">
-        About Me
-    </div>
-
-    <div class="about-content">
-
-        <div class="about-image">
-            <img src="profile.jpg">
-        </div>
-
-        <div class="about-text">
-
-            <h2>
-                Chibuike Somtoo Ezeh
-            </h2>
-
-            <h3>
-                Popularly Known As Soloboy GT
-            </h3>
-
-            <p>
-                I am a Nigerian Programmer,
-                Artist, Content Creator,
-                Scriptwriter and Photographer.
-
-                I combine creativity and
-                technology to build projects,
-                create content and tell stories
-                that inspire people.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-  <section id="services">
-
-    <h2>What I Do</h2>
-
-    <div class="services-grid">
-
-        <div class="service-card">
-            💻
-            <h3>Programming</h3>
-        </div>
-
-        <div class="service-card">
-            🎵
-            <h3>Artist</h3>
-        </div>
-
-        <div class="service-card">
-            🎥
-            <h3>Content Creation</h3>
-        </div>
-
-        <div class="service-card">
-            🎬
-            <h3>Script Writing</h3>
-        </div>
-
-        <div class="service-card">
-            📸
-            <h3>Photography</h3>
-        </div>
-
-    </div>
-
-</section>
-  <section id="work">
-
-    <h2 class="section-title">
-        Featured Work
+    <h2>
+      Building Technology.
+      Creating Experiences.
+      Telling Stories.
     </h2>
-
-    <div class="work-grid">
-
-        <div class="work-card">
-            <h3>Martexc</h3>
-            <p>
-                Reward and advertising platform.
-            </p>
-        </div>
-
-        <div class="work-card">
-            <h3>Sereels</h3>
-            <p>
-                Digital investment platform.
-            </p>
-        </div>
-
-        <div class="work-card">
-            <h3>Pendrova</h3>
-            <p>
-                Modern article publishing platform.
-            </p>
-        </div>
-
-        <div class="work-card">
-            <h3>Vearn</h3>
-            <p>
-                Digital earning ecosystem.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-  <section id="videos">
-
-    <h2 class="section-title">
-        Content Creation
-    </h2>
-
-    <div class="video-grid">
-
-        <iframe
-        src="https://youtu.be/xHNlrJagbCY?si=VPH6aPz5mVoaz-6e"
-        allowfullscreen>
-        </iframe>
-
-        <iframe
-        src="https://youtube.com/shorts/MR5VxY6svK4?si=zetHPcN2w-o7QRhy"
-        allowfullscreen>
-        </iframe>
-
-        <iframe
-        src="https://youtube.com/shorts/KYVkqVvPDk4?si=WPaN1Eg2NyD8aq5z"
-        allowfullscreen>
-        </iframe>
-
-    </div>
-
-</section>
-  <section id="photography">
-
-    <h2 class="section-title">
-        Photography
-    </h2>
-
-    <div class="gallery">
-
-        <img src="https://121clicks.com/inspirations/best-famous-indian-wildlife-photographers/">
-        <img src="photo2.jpg">
-        <img src="photo3.jpg">
-        <img src="photo4.jpg">
-
-    </div>
-
-</section>
-  <section id="info">
-
-    <h2 class="section-title">
-        My Journey
-    </h2>
-
-    <div class="timeline">
-
-        <div class="timeline-item">
-            <span>2006</span>
-            <h3>Born</h3>
-        </div>
-
-        <div class="timeline-item">
-            <span>2019</span>
-            <h3>Creative Journey Began</h3>
-        </div>
-
-        <div class="timeline-item">
-            <span>2020</span>
-            <h3>Started Programming</h3>
-        </div>
-
-        <div class="timeline-item">
-            <span>2023</span>
-            <h3>Content Creation & Projects</h3>
-        </div>
-
-    </div>
-
-</section>
-  <section id="contact">
-
-    <div class="contact-box">
-
-        <h2>
-            Let's Connect
-        </h2>
-
-        <p>
-            Feel free to reach out through any of my social platforms.
-        </p>
-
-        <div class="socials">
-
-            <a href="https://facebook.com/soloboygt">
-                Facebook
-            </a>
-
-            <a href="https://instagram.com/soloboygt">
-                Instagram
-            </a>
-
-            <a href="https://youtube.com/@soloboygt">
-                YouTube
-            </a>
-
-            <a href="https://tiktok.com/@soloboygt01">
-                TikTok
-            </a>
-
-            <a href="https://linkedin.com/in/soloboygt">
-                LinkedIn
-            </a>
-
-            <a href="https://twitter.com/Soloboygt">
-                X
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-  
-  <footer>
-
-    <h3>Soloboy GT</h3>
 
     <p>
-        Programmer • Artist • Content Creator • Scriptwriter • Photographer
+      I am a versatile Web Developer and creative professional
+      who builds responsive websites, interactive web applications
+      and digital experiences while working across design,
+      video, photography, scripting and content creation.
     </p>
 
-    <small>
-        © 2026 Soloboy GT. All Rights Reserved.
-    </small>
+    <div class="hero-buttons">
+
+      <a href="#work" class="btn-primary">
+        Explore My Work
+      </a>
+
+      <a href="#contact" class="btn-secondary">
+        Let's Connect
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <div class="hero-right">
+
+    <div class="hero-image-wrapper">
+
+      <img src="profile.jpg"
+           alt="Chibuike Somtoo Ezeh - Soloboy Gt">
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about">
+
+  <div class="section-title">
+
+    <h2>
+      About Me
+    </h2>
+
+    <p>
+      Technology, creativity and storytelling are all part
+      of what I do.
+    </p>
+
+  </div>
+
+
+  <div class="about-content">
+
+    <div class="about-image">
+
+      <img src="profile.jpg"
+           alt="Chibuike Somtoo Ezeh">
+
+    </div>
+
+
+    <div class="about-text">
+
+      <h2>
+        Chibuike Somtoo Ezeh
+      </h2>
+
+      <h3>
+        Popularly Known As Soloboy Gt
+      </h3>
+
+      <p>
+        I am a Web Developer, Programmer and creative professional
+        passionate about building useful digital products and
+        creating experiences that people can interact with.
+      </p>
+
+      <p>
+        My technical work covers front-end development,
+        back-end development, database-driven applications,
+        UI design and web technologies such as HTML, CSS,
+        JavaScript, PHP and MySQL.
+      </p>
+
+      <p>
+        Beyond programming, I also work in graphics design,
+        video editing, photography, script writing and content
+        creation. This combination allows me to approach projects
+        from both a technical and creative perspective.
+      </p>
+
+
+      <div class="about-highlights">
+
+        <div class="highlight">
+          💻 Web Development
+        </div>
+
+        <div class="highlight">
+          ⚙️ Front-end & Back-end
+        </div>
+
+        <div class="highlight">
+          🎨 UI & Graphics Design
+        </div>
+
+        <div class="highlight">
+          🎬 Film & Video
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     TECHNICAL SKILLS
+========================= -->
+
+<section id="skills">
+
+  <div class="section-title">
+
+    <h2>
+      Technical Skills
+    </h2>
+
+    <p>
+      Technologies and areas I work with when building
+      digital products and web applications.
+    </p>
+
+  </div>
+
+
+  <div class="skills-grid">
+
+
+    <div class="skill-card">
+
+      <div class="skill-icon">
+        💻
+      </div>
+
+      <h3>
+        Front-end Development
+      </h3>
+
+      <p>
+        Building responsive and interactive interfaces
+        that work across desktop, tablet and mobile devices.
+      </p>
+
+      <div class="skill-tags">
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+        <span>Responsive Design</span>
+      </div>
+
+    </div>
+
+
+    <div class="skill-card">
+
+      <div class="skill-icon">
+        ⚙️
+      </div>
+
+      <h3>
+        Back-end Development
+      </h3>
+
+      <p>
+        Developing server-side functionality and
+        database-driven web applications.
+      </p>
+
+      <div class="skill-tags">
+        <span>PHP</span>
+        <span>MySQL</span>
+        <span>Backend Logic</span>
+        <span>Databases</span>
+      </div>
+
+    </div>
+
+
+    <div class="skill-card">
+
+      <div class="skill-icon">
+        🔗
+      </div>
+
+      <h3>
+        Web Applications
+      </h3>
+
+      <p>
+        Connecting interfaces with backend systems,
+        databases and application functionality.
+      </p>
+
+      <div class="skill-tags">
+        <span>APIs</span>
+        <span>AJAX</span>
+        <span>PHP</span>
+        <span>MySQL</span>
+      </div>
+
+    </div>
+
+
+    <div class="skill-card">
+
+      <div class="skill-icon">
+        🎨
+      </div>
+
+      <h3>
+        UI & Visual Design
+      </h3>
+
+      <p>
+        Designing clean, modern interfaces with attention
+        to usability, layout and visual consistency.
+      </p>
+
+      <div class="skill-tags">
+        <span>UI Design</span>
+        <span>UX Principles</span>
+        <span>Graphics</span>
+        <span>Visual Design</span>
+      </div>
+
+    </div>
+
+
+    <div class="skill-card">
+
+      <div class="skill-icon">
+        🔧
+      </div>
+
+      <h3>
+        Development Tools
+      </h3>
+
+      <p>
+        Working with common development environments and
+        tools for building, testing and managing projects.
+      </p>
+
+      <div class="skill-tags">
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>VS Code</span>
+        <span>XAMPP</span>
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     WHAT I DO
+========================= -->
+
+<section id="services">
+
+  <div class="section-title">
+
+    <h2>
+      What I Do
+    </h2>
+
+    <p>
+      A combination of technical development and creative work.
+    </p>
+
+  </div>
+
+
+  <div class="services-grid">
+
+
+    <div class="service-card">
+
+      <div class="service-icon">
+        💻
+      </div>
+
+      <h3>
+        Web Development
+      </h3>
+
+      <p>
+        Building responsive websites and functional
+        web applications from idea to implementation.
+      </p>
+
+    </div>
+
+
+    <div class="service-card">
+
+      <div class="service-icon">
+        ⚙️
+      </div>
+
+      <h3>
+        Front-end & Back-end
+      </h3>
+
+      <p>
+        Working across both the user interface and
+        server-side functionality of web applications.
+      </p>
+
+    </div>
+
+
+    <div class="service-card">
+
+      <div class="service-icon">
+        🎨
+      </div>
+
+      <h3>
+        UI & Graphics Design
+      </h3>
+
+      <p>
+        Creating interfaces, promotional graphics and
+        visual designs that communicate clearly.
+      </p>
+
+    </div>
+
+
+    <div class="service-card">
+
+      <div class="service-icon">
+        🎥
+      </div>
+
+      <h3>
+        Video Editing
+      </h3>
+
+      <p>
+        Editing and producing video content for
+        entertainment, social media and creative projects.
+      </p>
+
+    </div>
+
+
+    <div class="service-card">
+
+      <div class="service-icon">
+        🎬
+      </div>
+
+      <h3>
+        Script Writing
+      </h3>
+
+      <p>
+        Developing stories, scripts and concepts
+        for films and short-form creative content.
+      </p>
+
+    </div>
+
+
+    <div class="service-card">
+
+      <div class="service-icon">
+        📸
+      </div>
+
+      <h3>
+        Photography
+      </h3>
+
+      <p>
+        Capturing and creating visual stories through
+        photography and creative direction.
+      </p>
+
+    </div>
+
+
+    <div class="service-card">
+
+      <div class="service-icon">
+        📱
+      </div>
+
+      <h3>
+        Content Creation
+      </h3>
+
+      <p>
+        Creating entertaining and engaging digital
+        content for social media platforms.
+      </p>
+
+    </div>
+
+
+    <div class="service-card">
+
+      <div class="service-icon">
+        🎵
+      </div>
+
+      <h3>
+        Music & Art
+      </h3>
+
+      <p>
+        Exploring music, performance and other forms
+        of creative expression.
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     PROJECTS
+========================= -->
+
+<section id="work">
+
+  <div class="section-title">
+
+    <h2>
+      Featured Projects
+    </h2>
+
+    <p>
+      Selected digital projects and web applications
+      I have worked on.
+    </p>
+
+  </div>
+
+
+  <div class="work-grid">
+
+
+    <div class="work-card">
+
+      <div class="project-number">
+        PROJECT 01
+      </div>
+
+      <h3>
+        Mecview Group
+      </h3>
+
+      <p>
+        A modern business website designed for a company
+        operating across real estate, agriculture and
+        cleaning services.
+      </p>
+
+      <div class="project-tech">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>PHP</span>
+        <span>MySQL</span>
+      </div>
+
+    </div>
+
+
+    <div class="work-card">
+
+      <div class="project-number">
+        PROJECT 02
+      </div>
+
+      <h3>
+        LifeVibeHub
+      </h3>
+
+      <p>
+        A content publishing platform with user accounts,
+        administration, posts, categories, comments,
+        likes and database-driven functionality.
+      </p>
+
+      <div class="project-tech">
+        <span>PHP</span>
+        <span>MySQL</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+
+    </div>
+
+
+    <div class="work-card">
+
+      <div class="project-number">
+        PROJECT 03
+      </div>
+
+      <h3>
+        Pendrova
+      </h3>
+
+      <p>
+        A social platform concept combining posts and
+        short-form video content with social interactions
+        such as likes, comments, follows, reposts,
+        notifications and messaging.
+      </p>
+
+      <div class="project-tech">
+        <span>PHP</span>
+        <span>MySQL</span>
+        <span>JavaScript</span>
+        <span>AJAX</span>
+        <span>Responsive UI</span>
+      </div>
+
+    </div>
+
+
+    <div class="work-card">
+
+      <div class="project-number">
+        PROJECT 04
+      </div>
+
+      <h3>
+        Martexc
+      </h3>
+
+      <p>
+        A web platform project involving user-focused
+        interfaces, dynamic functionality and
+        database-backed features.
+      </p>
+
+      <div class="project-tech">
+        <span>PHP</span>
+        <span>MySQL</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+
+    </div>
+
+
+    <div class="work-card">
+
+      <div class="project-number">
+        PROJECT 05
+      </div>
+
+      <h3>
+        Vearn
+      </h3>
+
+      <p>
+        A digital platform project focused on interactive
+        user experiences and dynamic web functionality.
+      </p>
+
+      <div class="project-tech">
+        <span>Web Development</span>
+        <span>PHP</span>
+        <span>MySQL</span>
+        <span>JavaScript</span>
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     CREATIVE WORK
+========================= -->
+
+<section id="creative">
+
+  <div class="section-title">
+
+    <h2>
+      Creative Work
+    </h2>
+
+    <p>
+      Technology is one side of what I do.
+      Creativity is another.
+    </p>
+
+  </div>
+
+
+  <div class="creative-grid">
+
+
+    <div class="creative-card">
+
+      <div class="icon">
+        🎥
+      </div>
+
+      <h3>
+        Video & Film
+      </h3>
+
+      <p>
+        Short films, skits, storytelling and video content.
+      </p>
+
+    </div>
+
+
+    <div class="creative-card">
+
+      <div class="icon">
+        📸
+      </div>
+
+      <h3>
+        Photography
+      </h3>
+
+      <p>
+        Portraits, creative photography and visual storytelling.
+      </p>
+
+    </div>
+
+
+    <div class="creative-card">
+
+      <div class="icon">
+        🎨
+      </div>
+
+      <h3>
+        Graphics Design
+      </h3>
+
+      <p>
+        Digital designs, promotional materials and visual concepts.
+      </p>
+
+    </div>
+
+
+    <div class="creative-card">
+
+      <div class="icon">
+        ✍️
+      </div>
+
+      <h3>
+        Script Writing
+      </h3>
+
+      <p>
+        Movie scripts, story concepts and creative writing.
+      </p>
+
+    </div>
+
+
+    <div class="creative-card">
+
+      <div class="icon">
+        📱
+      </div>
+
+      <h3>
+        Content Creation
+      </h3>
+
+      <p>
+        Social media entertainment and digital content.
+      </p>
+
+    </div>
+
+
+    <div class="creative-card">
+
+      <div class="icon">
+        🎵
+      </div>
+
+      <h3>
+        Music & Art
+      </h3>
+
+      <p>
+        Music, artistic expression and creative projects.
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     VIDEOS
+========================= -->
+
+<section id="videos">
+
+  <div class="section-title">
+
+    <h2>
+      Content Creation
+    </h2>
+
+    <p>
+      Some of my video and entertainment work.
+    </p>
+
+  </div>
+
+
+  <div class="video-grid">
+
+
+    <div class="video-card">
+
+      <iframe
+        src="https://www.youtube.com/embed/xHNlrJagbCY"
+        title="Soloboy Gt Video"
+        allowfullscreen>
+      </iframe>
+
+      <div class="video-info">
+
+        <h3>
+          Featured Video
+        </h3>
+
+        <p>
+          Content by Soloboy Gt
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="video-card">
+
+      <iframe
+        src="https://www.youtube.com/embed/MR5VxY6svK4"
+        title="Soloboy Gt Short"
+        allowfullscreen>
+      </iframe>
+
+      <div class="video-info">
+
+        <h3>
+          Short-form Content
+        </h3>
+
+        <p>
+          Content by Soloboy Gt
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="video-card">
+
+      <iframe
+        src="https://www.youtube.com/embed/KYVkqVvPDk4"
+        title="Soloboy Gt Short"
+        allowfullscreen>
+      </iframe>
+
+      <div class="video-info">
+
+        <h3>
+          Creative Content
+        </h3>
+
+        <p>
+          Content by Soloboy Gt
+        </p>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     PHOTOGRAPHY
+========================= -->
+
+<section id="photography">
+
+  <div class="section-title">
+
+    <h2>
+      Photography
+    </h2>
+
+    <p>
+      A selection of my visual work.
+    </p>
+
+  </div>
+
+
+  <div class="gallery">
+
+
+    <div class="gallery-item">
+      <img src="photo2.jpg"
+           alt="Soloboy Gt Photography">
+    </div>
+
+
+    <div class="gallery-item">
+      <img src="photo3.jpg"
+           alt="Soloboy Gt Photography">
+    </div>
+
+
+    <div class="gallery-item">
+      <img src="photo4.jpg"
+           alt="Soloboy Gt Photography">
+    </div>
+
+
+    <div class="gallery-item">
+      <img src="profile.jpg"
+           alt="Soloboy Gt Creative Photography">
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     JOURNEY
+========================= -->
+
+<section id="info">
+
+  <div class="section-title">
+
+    <h2>
+      My Journey
+    </h2>
+
+    <p>
+      From creativity to technology and everything in between.
+    </p>
+
+  </div>
+
+
+  <div class="timeline">
+
+
+    <div class="timeline-item">
+
+      <span>
+        2006
+      </span>
+
+      <h3>
+        Born
+      </h3>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+      <span>
+        2019
+      </span>
+
+      <h3>
+        Creative Journey Began
+      </h3>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+      <span>
+        2020
+      </span>
+
+      <h3>
+        Started Programming
+      </h3>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+      <span>
+        2023
+      </span>
+
+      <h3>
+        Content Creation & Projects
+      </h3>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact">
+
+  <div class="contact-box">
+
+    <h2>
+      Let's Connect
+    </h2>
+
+    <p>
+      Whether you are looking for a developer, creative
+      collaborator or simply want to connect, feel free
+      to reach out through my platforms.
+    </p>
+
+
+    <div class="socials">
+
+      <a href="https://facebook.com/soloboygt"
+         target="_blank"
+         rel="noopener">
+        Facebook
+      </a>
+
+      <a href="https://instagram.com/soloboygt"
+         target="_blank"
+         rel="noopener">
+        Instagram
+      </a>
+
+      <a href="https://youtube.com/@soloboygt"
+         target="_blank"
+         rel="noopener">
+        YouTube
+      </a>
+
+      <a href="https://tiktok.com/@soloboygt01"
+         target="_blank"
+         rel="noopener">
+        TikTok
+      </a>
+
+      <a href="https://linkedin.com/in/soloboygt"
+         target="_blank"
+         rel="noopener">
+        LinkedIn
+      </a>
+
+      <a href="https://twitter.com/Soloboygt"
+         target="_blank"
+         rel="noopener">
+        X
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <h3>
+    Soloboy Gt
+  </h3>
+
+  <p>
+    Web Developer • Programmer • UI Designer •
+    Content Creator • Creative
+  </p>
+
+  <small>
+    © 2026 Soloboy Gt. All Rights Reserved.
+  </small>
 
 </footer>
+
+
+
+<!-- =========================
+     MOBILE MENU JAVASCRIPT
+========================= -->
+
+<script>
+
+  const menuBtn = document.getElementById("menuBtn");
+  const navLinks = document.getElementById("navLinks");
+
+  menuBtn.addEventListener("click", function(){
+
+    navLinks.classList.toggle("active");
+
+    if(navLinks.classList.contains("active")){
+      menuBtn.textContent = "✕";
+    }else{
+      menuBtn.textContent = "☰";
+    }
+
+  });
+
+
+  /* Close mobile menu after clicking a link */
+
+  document.querySelectorAll(".nav-links a").forEach(function(link){
+
+    link.addEventListener("click", function(){
+
+      navLinks.classList.remove("active");
+
+      menuBtn.textContent = "☰";
+
+    });
+
+  });
+
+</script>
+
+
 </body>
 </html>
